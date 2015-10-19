@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Dtn_ServiceProduct>
+            <version>1.0.0</version>
+        </Dtn_ServiceProduct>
+    </modules>
+    <global>
+        <models>
+            <service_product>
+                <class>Dtn_ServiceProduct_Model</class>
+            </service_product>
+        </models>
+        <catalog>
+            <product>
+                <type>
+                    <service translate="label" module="catalog">
+                        <label>Service Product</label>
+                        <model>service_product/product_type</model>
+                        <price_model>service_product/product_price</price_model>
+                        <composite>0</composite>
+                        <index_priority>25</index_priority>
+                    </service>
+                </type>
+            </product>
+        </catalog>
+        <resources>
+            <service_product_setup>
+                <setup>
+                    <module>Dtn_ServiceProduct</module>
+                    <class>Mage_Catalog_Model_Resource_Setup</class>
+                </setup>
+            </service_product_setup>
+        </resources>
+    </global>
+</config>

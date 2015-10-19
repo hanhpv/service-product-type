@@ -1,0 +1,4 @@
+# Custom service product type for Magento
+
+app/code/local/Dtn/ServiceProduct/ app/code/local/Dtn/ServiceProduct/
+app/etc/modules/Dtn_ServiceProduct.xml app/etc/modules/Dtn_ServiceProduct.xml
