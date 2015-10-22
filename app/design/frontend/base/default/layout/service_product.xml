@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <PRODUCT_TYPE_service translate="label" module="catalog">
+        <label>Catalog Product View (Service)</label>
+        <reference name="product.info">
+            <block type="catalog/product_view_type_simple" name="product.info.service" as="product_type_data" template="catalog/product/view/type/service.phtml">
+                <block type="core/text_list" name="product.info.service.extra" as="product_type_data_extra" translate="label">
+                    <label>Product Extra Info</label>
+                </block>
+            </block>
+        </reference>
+        <remove name="aitproductslists.listform"/>
+        <remove name="aitproductslists.jsadd"/>
+    </PRODUCT_TYPE_service>
+</layout>

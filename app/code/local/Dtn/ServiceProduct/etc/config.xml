@@ -10,7 +10,22 @@
             <service_product>
                 <class>Dtn_ServiceProduct_Model</class>
             </service_product>
+            <catalog>
+                <rewrite>
+                    <product>Dtn_ServiceProduct_Model_Product</product>
+                </rewrite>
+            </catalog>
+            <sales>
+                <rewrite>
+                    <quote_address_total_subtotal>Dtn_ServiceProduct_Model_Sales_Quote_Address_Total_Subtotal</quote_address_total_subtotal>
+                </rewrite>
+            </sales>
         </models>
+        <helpers>
+            <service_product>
+                <class>Dtn_ServiceProduct_Helper</class>
+            </service_product>
+        </helpers>
         <catalog>
             <product>
                 <type>
@@ -33,4 +48,31 @@
             </service_product_setup>
         </resources>
     </global>
+    <frontend>
+        <layout>
+            <updates>
+                <service_product>
+                    <file>service_product.xml</file>
+                </service_product>
+            </updates>
+        </layout>
+        <events>
+            <sales_quote_item_qty_set_after>
+                <observers>
+                    <service_product>
+                        <class>service_product/observer</class>
+                        <method>salesQuoteItemQtySetAfter</method>
+                    </service_product>
+                </observers>
+            </sales_quote_item_qty_set_after>
+            <sales_quote_add_item>
+                <observers>
+                    <service_product>
+                        <class>service_product/observer</class>
+                        <method>salesQuoteAddItem</method>
+                    </service_product>
+                </observers>
+            </sales_quote_add_item>
+        </events>
+    </frontend>
 </config>

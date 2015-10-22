@@ -1,0 +1,5 @@
+<div class="price-box service-price">
+    <span class="regular-price"><span class="price"><label for="service_price"><?php echo Mage::app()->getStore()->getCurrentCurrencyCode() ?></label></span></span>
+    <input type="text" name="service_price" id="service_price" class="input-text required-entry"/>
+</div>
+<?php echo $this->getChildHtml('product_type_data_extra') ?>

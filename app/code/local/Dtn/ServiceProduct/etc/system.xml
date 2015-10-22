@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <service_product translate="label" module="catalog">
+            <label>Service Product</label>
+            <tab>catalog</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>55</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>0</show_in_store>
+            <groups>
+                <configuration translate="label comment">
+                    <label>Configurations</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <max_price translate="label">
+                            <label>Maximum price customer can set</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-number</validate>
+                            <backend_model>service_product/system_config_backend_price</backend_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </max_price>
+                        <service_margin translate="label">
+                            <label>Service margin</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-number</validate>
+                            <backend_model>service_product/system_config_backend_price</backend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </service_margin>
+                    </fields>
+                </configuration>
+            </groups>
+        </service_product>
+    </sections>
+</config>

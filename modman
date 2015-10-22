@@ -1,4 +1,6 @@
 # Custom service product type for Magento
 
-app/code/local/Dtn/ServiceProduct/ app/code/local/Dtn/ServiceProduct/
-app/etc/modules/Dtn_ServiceProduct.xml app/etc/modules/Dtn_ServiceProduct.xml
+app/code/local/Dtn/ServiceProduct/                                                  app/code/local/Dtn/ServiceProduct/
+app/design/frontend/base/default/layout/service_product.xml                         app/design/frontend/base/default/layout/service_product.xml
+app/design/frontend/base/default/template/catalog/product/view/type/service.phtml   app/design/frontend/base/default/template/catalog/product/view/type/service.phtml
+app/etc/modules/Dtn_ServiceProduct.xml                                              app/etc/modules/Dtn_ServiceProduct.xml
