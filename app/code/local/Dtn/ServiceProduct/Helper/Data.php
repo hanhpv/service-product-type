@@ -2,6 +2,10 @@
 
 class Dtn_ServiceProduct_Helper_Data extends Mage_Core_Helper_Abstract
 {
+    /**
+    * check if quote has service product
+    * @return boolean
+    */
     public function quoteHasServiceProduct()
     {
         $quote = Mage::getSingleton('checkout/session')->getQuote();
